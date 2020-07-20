@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+.clr {
+    clear: both;
+}
+
+.full-wrapper {
+    width: 100%;
+    
+}
+.wrapper {
+    max-width:1449px;
+    margin: 0 auto;
+}
+/*=================== header part css ======================*/
+.header-bg{
+	background: url(../images/WaterHomPageAlternative.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+.nav-bar{
+	background-color: transparent;
+	width:100%;
+	padding-top:50px;
+}
+.top-left{
+	width:722px;
+	float:left;
+}
+.top-left span{
+	color: #0d0202;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 27px;
+	letter-spacing: .04em;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.top-right-menu{
+	width:727px;
+	float:left;
+	text-align:right;
+}
+
+.top-right-menu ul li{
+	display:inline-block;
+	position:relative;
+}
+.top-right-menu ul li:hover > ul{
+	visibility:visible;
+}
+.top-right-menu ul li ul{
+	position:absolute;
+	background:#fff;
+	visibility:hidden;
+	font-family: 'Fjalla One', sans-serif;
+	text-align:left;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding:15px;
+	width:160px;
+	left: -18px;
+	
+}
+.top-right-menu ul li ul li{
+	width:100%;
+}
+.top-right-menu ul li ul li a{
+	color:#000;
+}
+.top-right-menu ul li a{
+	color:#fff;
+	padding: 0 15px;
+	line-height:30px;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+}
+.header-text-area{
+	padding-top:205px;
+	width: 100%;
+}
+.header-text{
+	text-align: left;
+}
+.header-text h1{
+	font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 54px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+}
+.banner-text{
+	padding-top:175px;
+	padding-bottom:230px;
+	width: 100%;
+}
+	
+.banner-text a{
+	color: #fff;
+	background-color: #000;
+	border-color: #000;
+    padding: 21px 34px;
+	font-size: 15px;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+.banner-text a span{
+	font-size:15px;
+  
+}
+/*=================== header part css End ======================*/
+
+/* =====================footer from start here==================== */
+.footer-bg{
+	background-color:#000;
+	
+}
+.footer-content{
+	width:100%;
+	padding:95px 0;
+}
+.footer-left{
+	width:850px;
+	float:left;
+}
+.footer-right{
+	width:599px;
+	float:left;
+}
+.footer-right  {
+	width:599px;
+	float:left;
+}
+
+.footer-list{
+	width: 170px;
+	float:left;
+}
+
+.footer-list ul{
+	padding:10px;
+}
+.footer-list ul li a{
+	color:#fff;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	letter-spacing: .06em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+.footer-list h3{
+	padding-top:15px;
+	padding-left:10px;
+	color:#a6a6a6;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	letter-spacing: .06em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+.footer-content h3{
+	color:#fff;
+	padding-top:15px;
+	padding-left:10px;
+	color:#a6a6a6;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	letter-spacing: .06em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+.footer-content-lt p{
+	padding-top:15px;
+	padding-left:60px;
+	padding-right:230px;
+	color:#fff;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	letter-spacing: .06em;
+	line-height: 1.8em;
+	text-transform: none;
+}
+.footer-text{
+	width:350px;
+	padding-left:475px;
+	padding-bottom:100px;
+	
+}
+.footer-text p{
+	text-align:left;
+	color:#fff;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	letter-spacing: .06em;
+	line-height: 1.8em;
+	text-transform: none;
+	padding-top:10px;
+	
+}
+
+/* =====================footer from end here==================== */
+

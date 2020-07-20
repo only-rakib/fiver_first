@@ -1,0 +1,61 @@
+h1
+{
+	font-size: 50px;
+	letter-spacing: .00592593px;
+	font-family: 'Fjalla One', sans-serif;
+	
+	font-weight: bold;
+}
+h2
+{
+	font-size: 38px;
+	font-weight: bold;
+	letter-spacing: .0175px;
+	font-family: 'Fjalla One', sans-serif;
+}
+p
+{
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: small;
+	text-align: left;
+}
+.column 
+{
+	white-space: pre-line;
+	float: left;
+	width: 25%;
+	/*padding: 10px;*/
+	padding-left: 4%;
+	padding-right:3%;
+	padding-bottom: 3%;
+	
+	word-wrap: break-word;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	font-family: 'Libre Franklin', sans-serif;
+	letter-spacing: .06em;
+	line-height: 1.8em;
+	text-transform: none;
+	color: #000;	
+
+}
+.row
+{
+	content:"" ;
+	display: table;
+	clear: both;
+	/*padding-top: 1%;*/
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-bottom: 2%;
+		
+}
+.first-div
+{
+	clear:both;
+	width: 51%;
+	margin-left: 3%;
+	
+}
+
