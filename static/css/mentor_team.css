@@ -1,0 +1,103 @@
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 300%;
+  letter-spacing: 0.01em;
+  line-height: 1.3em;
+  text-transform: none;
+}
+h2 {
+  font-size: 180%;
+  font-weight: bold;
+  font-family: "Fjalla One", sans-serif;
+}
+p {
+  white-space: pre-wrap;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: small;
+  text-align: left;
+}
+
+.row {
+  margin-top: 8%;
+  content: "";
+  display: table;
+  clear: both;
+  /*padding-top: 1%;*/
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 2%;
+  width: 100%;
+}
+.column {
+  white-space: pre-line;
+  float: left;
+  width: 40%;
+  /*padding: 10px;*/
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 3%;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 0.06em;
+  line-height: 1.8em;
+  text-transform: none;
+  color: #000;
+  /*border:1px solid red;*/
+}
+.column-first {
+  overflow: hidden;
+  float: left;
+  width: 35%;
+  /*padding: 10px;*/
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 3%;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 0.06em;
+  line-height: 1.8em;
+  text-transform: none;
+  color: #000;
+  /*border:1px solid red;*/
+}
+.first-div {
+  clear: both;
+  width: 33%;
+  margin-left: 3%;
+  margin-top: 8%;
+}
+.inner-div {
+  float: left;
+  width: 55%;
+}
+td {
+  font-size: 11px;
+}
+table {
+  width: 100%;
+  text-align: left;
+}
+
+.btn-read {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  padding: 15px 30px;
+  overflow: hidden;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  font-weight: 600;
+}
+button:hover {
+  color: red;
+}

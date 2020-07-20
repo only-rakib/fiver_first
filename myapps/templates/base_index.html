@@ -26,10 +26,10 @@
 								<a href="#">About</a>
 								<ul>
 									<li><a href="{% url 'our_vision' %}">Our vision</a></li>
-									<li><a href="#">Mentor Team</a></li>
-									<li><a href="#">careers</a></li>
-									<li><a href="#">Latesh news</a></li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="{% url 'mentor_team' %}">Mentor Team</a></li>
+									<li><a href="{% url 'careers_mentor' %}">careers</a></li>
+									<li><a href="#">Latest news</a></li>
+									<li><a href="{% url 'contact' %}">Contact</a></li>
 								</ul>
 							</li>
 							<li>
@@ -44,20 +44,20 @@
 							<li>
 								<a href="#">Impact</a>
 								<ul>
-									<li><a href="#">2016 Anual Report</a></li>
+									<li><a href="{% url 'annual_report2016' %}">2016 Anual Report</a></li>
 									<li><a href="#">Success Stories</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="#">Ways to Help</a>
 								<ul>
-									<li><a href="#">Donate</a></li>
-									<li><a href="#">Become a Sponsor</a></li>
-									<li><a href="#">Join the Team</a></li>
+									<li><a href="{% url 'donate' %}">Donate</a></li>
+									<li><a href="{% url 'become_a_sponsor' %}">Become a Sponsor</a></li>
+									<li><a href="{% url 'careers_mentor' %}">Join the Team</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="#">Donate</a>
+								<a href="{% url 'donate' %}">Donate</a>
 								
 							</li>
 						</ul>
