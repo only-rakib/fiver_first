@@ -139,11 +139,11 @@ def BecomeaSponsorView(request):
         'button_name': "",
         'button_id': "",
         'button_title': "MAKE A GENERAL DONATION →",
-        'button_href': '/donate/'
+        'button_href': 'donate'
     }
     second_job = {
         'title': 'School #7',
-        'image': '/static/images/images.squarespace-cdn.com.jpeg',
+        'image': 'images.squarespace-cdn.com.jpeg',
         'description': '''Here is a description of your campaign.
          Nullam tempor dolor sed nulla auctor, nec placerat felis sodales.
          Etiam et turpis mattis, efficitur mi ut, ultrices diam.
@@ -151,15 +151,15 @@ def BecomeaSponsorView(request):
          Donec eu ornare augue, ut.''',
 
         'more_text': "More information →",
-        'more_href': "#",
+        'more_href': "campaign-1",
         'button_name': "1",
         'button_id': "1",
         'button_title': "SPONSOR THIS CAMPAIGN",
-        'button_href': "#"
+        'button_href': "donate"
     }
     third_job = {
         'title': 'STEM Materials',
-        'image': '/static/images/images.squarespace-cdn.comx.jpeg',
+        'image': 'images.squarespace-cdn.comx.jpeg',
         'description': '''Here is a description of your campaign.
          Nullam tempor dolor sed nulla auctor, nec placerat felis sodales.
          Etiam et turpis mattis, efficitur mi ut, ultrices diam.
@@ -167,11 +167,11 @@ def BecomeaSponsorView(request):
          Donec eu ornare augue, ut.''',
 
         'more_text': "More information →",
-        'more_href': "#",
+        'more_href': "campaign-2",
         'button_name': "1",
         'button_id': "1",
         'button_title': "SPONSOR THIS CAMPAIGN",
-        'button_href': "#"
+        'button_href': "donate"
     }
     lst = []
     lst.append(first_job)
@@ -190,3 +190,106 @@ def UnderConstructionView(request):
 
 def annualReportView(request):
     return render(request, 'under_construction.html')
+
+
+def successStoriesView(request):
+    row1 = {
+        'title': '1. Ut dui quam, dignissim sed nisl.',
+
+        'col1': '''Here is a description of what sponsorship means for your company. 
+        Morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Nullam tempor dolor sed nulla auctor, nec placerat felis sodales. Etiam et turpis mattis, efficitur mi ut, ultrices diam. 
+        Donec consectetur, eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci. 
+        Donec eu ornare augue, ut efficitur velit.''',
+
+        'col2': '''Sed a eros nec leo euismod eleifend sit amet ut nisl. 
+        Sed a eros nec leo euismod eleifend sit amet ut nisl blandit. 
+        Nullam tempor dolor sed nulla auctor, nec placerat felis sodales. 
+        Etiam et turpis mattis, efficitur mi ut, ultrices diam. Donec consectetur, odio eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci.
+        Donec eu ornare augue, ut efficitur velit. Vestibulum et magna mattis, sollicitudin ligula.
+        Donec consectetur, odio eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci.
+        Donec eu ornare augue, ut efficitur velit. 
+        Vestibulum et magna mattis, sollicitudin ligula ac, facilisis dui.''',
+
+        'col3': '''''',
+
+        'quotes': '''“Ut dui quam, dignissim sed nisl sed, viverra tempor ipsum. Sed a eros nec leo euismod eleifend sit.”''',
+        'quotes_src': "Quote Source",
+        'image': ''
+
+    }
+    row2 = {
+        'title': '2. Ut dui quam, dignissim sed nisl.',
+
+        'col1': '''Here is a description of what sponsorship means for your company. 
+        Morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Nullam tempor dolor sed nulla auctor, nec placerat felis sodales. Etiam et turpis mattis, efficitur mi ut, ultrices diam. 
+        Donec consectetur, eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci. 
+        Donec eu ornare augue, ut efficitur velit.''',
+
+        'col2': '''Sed a eros nec leo euismod eleifend sit amet ut nisl. 
+        Sed a eros nec leo euismod eleifend sit amet ut nisl blandit. 
+        Nullam tempor dolor sed nulla auctor, nec placerat felis sodales. 
+        Etiam et turpis mattis, efficitur mi ut, ultrices diam. Donec consectetur, odio eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci.
+        Donec eu ornare augue, ut efficitur velit. Vestibulum et magna mattis, sollicitudin ligula.
+        Donec consectetur, odio eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci.
+        Donec eu ornare augue, ut efficitur velit. 
+        Vestibulum et magna mattis, sollicitudin ligula ac, facilisis dui.''',
+
+        'col3': '''''',
+
+        'quotes': '''''',
+        'quotes_src': "",
+        'image': 'success_stories_1.jpeg'
+
+    }
+    row3 = {
+        'title': '3. Ut dui quam, dignissim sed nisl.',
+
+        'col1': '''Here is a description of what sponsorship means for your company. 
+        Morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Nullam tempor dolor sed nulla auctor, nec placerat felis sodales. Etiam et turpis mattis, efficitur mi ut, ultrices diam. 
+        Donec consectetur, eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci. 
+        Donec eu ornare augue, ut efficitur velit.''',
+
+        'col2': '''Sed a eros nec leo euismod eleifend sit amet ut nisl. 
+        Sed a eros nec leo euismod eleifend sit amet ut nisl blandit. 
+        Nullam tempor dolor sed nulla auctor, nec placerat felis sodales. 
+        Etiam et turpis mattis, efficitur mi ut, ultrices diam. Donec consectetur, odio eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci.
+        Donec eu ornare augue, ut efficitur velit. Vestibulum et magna mattis, sollicitudin ligula.
+        Donec consectetur, odio eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci.
+        Donec eu ornare augue, ut efficitur velit. 
+        Vestibulum et magna mattis, sollicitudin ligula ac, facilisis dui.''',
+
+        'col3': '''''',
+
+        'quotes': '''''',
+        'quotes_src': "",
+        'image': ''
+
+    }
+    lst = []
+    lst.append(row1)
+    lst.append(row2)
+    lst.append(row3)
+
+    context = dict()
+    context['data'] = lst.copy()
+    lst.clear()
+    return render(request, 'success_stories.html', context)
+
+
+def campaign1View(request):
+    return render(request, 'campaign-1.html')
+
+
+def campaign2View(request):
+    return render(request, 'campaign-2.html')
+
+
+def campaign3View(request):
+    return render(request, 'campaign-3.html')
+
+
+def campaign4View(request):
+    return render(request, 'campaign-4.html')

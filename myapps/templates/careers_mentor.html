@@ -2,42 +2,40 @@
 {% load static %}
 {% block title %}
 	<title>
-		Careers — WATER JUSTICE FOR ALL AUSSIES
+	Careers — WATER JUSTICE FOR ALL AUSSIES
 	</title>
 {% endblock title %}
-		
+
 {% block container %}
 	<div class="container-fluid">
-	{% for key, value_list  in output.items %}
-		<div class="row">
-		
-			{% for i in value_list %}
-			<div class="col">
-				<h1>{{i.title}}</h1>
-				<p>
-					{{i.description}}
-				</p>
-				<h6>{{i.qualifications}}</h6>
-				<p>
-					{{i.details}}
-				</p>
-				{% if i.button_name and i.button_name.strip %}
-				<button type="button" class="btn btn-outline-dark" name="{{i.button_name}}" id ="{{i.button_id}}">APPLY→
-				</button>
-				{% endif %}
+		{% for key, value_list  in output.items %}
+			<div class="row">
+				
+				{% for i in value_list %}
+					<div class="col">
+						<h1>{{i.title}}</h1>
+						<p>
+							{{i.description}}
+						</p>
+						<h6>{{i.qualifications}}</h6>
+						<p>
+							{{i.details}}
+						</p>
+						{% if i.button_name and i.button_name.strip %}
+							<button type="button" class="btn btn-outline-dark" name="{{i.button_name}}" id ="{{i.button_id}}">APPLY→
+							</button>
+						{% endif %}
+					</div>
+					{%endfor%}
+				</div>
+				{%endfor%}
 			</div>
-			{%endfor%}
-		</div>
-	{%endfor%}
-	</div>
-{% endblock container %}
-
-{% block style %}
-		<link rel="stylesheet" type="text/css" href="{% static 'css/careers_mentor.css' %} "/>
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-{% endblock style %}
-		
+		{% endblock container %}
+		{% block style %}
+			<link rel="stylesheet" type="text/css" href="{% static 'css/careers_mentor.css' %} "/>
+			<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		{% endblock style %}

@@ -13,4 +13,16 @@ urlpatterns = [
          name='under_construction'),
     path('annual_report2016/', views.annualReportView,
          name='annual_report2016'),
+
+    path('success_stories/', views.successStoriesView,
+         name='success_stories'),
+    path('campaign-1/', views.campaign1View,
+         name='campaign-1'),
+    path('campaign-2/', views.campaign2View,
+         name='campaign-2'),
+    path('campaign-3/', views.campaign3View,
+         name='campaign-3'),
+    path('campaign-4/', views.campaign4View,
+         name='campaign-4'),
+
 ]

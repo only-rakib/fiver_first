@@ -1,0 +1,67 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block title %}
+	<title>Success Stories — WATER JUSTICE FOR ALL AUSSIES</title>
+{% endblock title %}
+{% block container %}
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<h6 class="header6">SUCCESS STORIES</h6>
+				<h2 class="header2">Donec consectetur, odio eget porta varius, orci mauris viverra.</h2>
+				
+			</div>
+			<div class="col">
+				
+			</div>
+			<div class="col">
+				
+				
+			</div>
+		</div>
+		{%for i in data%}
+		<div class="outer-div">
+			<h1 class="header1"> {{i.title}}</h1>
+			
+			<div class="row">
+				<div class="col">
+					<p>
+						{{i.col1}}
+					</p>
+					
+				</div>
+				<div class="col">
+					<p>
+						
+						{{i.col2}}
+					</p>
+				</div>
+				<div class="col">
+					{% if i.col3 and i.col3.strip %}
+						<p>{{i.col3}}</p>
+						{% elif i.quotes and i.quotes.strip%}
+						<h2 class="header2" >{{i.quotes}}</h2>
+						<p>— {{i.quotes_src}}</p>
+						{% elif i.image and i.image.strip%}
+						{% with 'images/'|add:i.image as image_static %}
+						
+						<img src="{% static image_static %}" class="img-fluid" alt="Responsive image">
+					{% endwith %}
+					
+				{% endif %}
+			</div>
+		</div>
+		
+	</div>
+	{%endfor%}
+</div>
+{% endblock container %}
+{% block style %}
+
+<link rel="stylesheet" type="text/css" href=" {% static 'css/success_stories.css' %} "/>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+{% endblock style %}

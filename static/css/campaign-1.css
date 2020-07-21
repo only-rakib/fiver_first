@@ -1,0 +1,47 @@
+.header1
+{
+	clear:both;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 50px;
+	text-transform: none
+}	
+.header2
+{
+	
+	font-family: 'Fjalla One', sans-serif;
+}
+.header6
+{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 14px;
+}
+p
+{
+	white-space:pre-line;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: small;
+	text-align: left;
+	padding-right: 4%;
+}
+
+.row
+{
+	content:"" ;
+	display: table;
+	clear: both;
+	margin-top:2%;
+	margin-bottom: 10%: 
+
+	/*padding-top: 1%;*/
+	padding-left: 4%;
+	padding-right: 6%;
+	padding-bottom: 2%;
+	width: 100%
+			
+}
+.outer-div
+{
+	margin-left: 4%;
+}

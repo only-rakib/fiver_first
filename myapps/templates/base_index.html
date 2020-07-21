@@ -4,8 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		{% block title %}
-
-    	{% endblock %}
+		{% endblock %}
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="{%static 'css/all.css'%}">
@@ -35,17 +34,17 @@
 							<li>
 								<a href="#">Campaigns</a>
 								<ul>
-									<li><a href="#">Campaign 1</a></li>
-									<li><a href="#">Campaign 2</a></li>
-									<li><a href="#">Campaign 3</a></li>
-									<li><a href="#">Campaign 4</a></li>
+									<li><a href="{% url 'campaign-1' %}">Campaign 1</a></li>
+									<li><a href="{% url 'campaign-2' %}">Campaign 2</a></li>
+									<li><a href="{% url 'campaign-3' %}">Campaign 3</a></li>
+									<li><a href="{% url 'campaign-4' %}">Campaign 4</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="#">Impact</a>
 								<ul>
 									<li><a href="{% url 'annual_report2016' %}">2016 Anual Report</a></li>
-									<li><a href="#">Success Stories</a></li>
+									<li><a href=" {% url 'success_stories' %} ">Success Stories</a></li>
 								</ul>
 							</li>
 							<li>
