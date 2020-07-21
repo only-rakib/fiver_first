@@ -95,20 +95,13 @@ def careersMentorView(request):
     lst.append(first_job)
     lst.append(second_job)
     lst.append(third_job)
-
-    context = dict()
-    context['data1'] = lst.copy()
-    #context['data2'] = second_job
-    #context['data3'] = third_job
-    #context['data4'] = fourth_job
-    #context['data5'] = fifth_job
-    lst.clear()
     lst.append(fourth_job)
     lst.append(fifth_job)
-    context['data2'] = lst.copy()
+    context = dict()
+    context['data'] = lst.copy()
     lst.clear()
 
-    return render(request, 'careers_mentor.html', {"output": context})
+    return render(request, 'careers_mentor.html', context)
 
 
 def mentorTeamView(request):
