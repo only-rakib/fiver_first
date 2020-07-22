@@ -3,10 +3,10 @@
     Latest News — WATER JUSTICE FOR ALL AUSSIES
 </title>
 {% endblock title %} {% block container %}
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         {% for i in data %}
-        <div class="col">
+        <div class="col-md-4">
             <h2 class="header2">{{i.title}}</h2>
             <p class="para">
                 {{i.description|truncatechars:215}}<a href="{{i.get_absolute_url}}">Read More</a>

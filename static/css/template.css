@@ -41,13 +41,11 @@
 }
 .row-inner
 {
-	content:"" ;
-	display: table;
-	clear: both;
+	
 	padding-left: 4%;
 	padding-right: 6%;
 	padding-bottom: 2%;
-	width: 100%
+	
 
 }
 .col-spaceing
@@ -126,7 +124,11 @@ form
 	font-size: 12px
 }
 
-
+.column-table
+{
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 12px
+}
 
 
 

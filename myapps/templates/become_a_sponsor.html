@@ -3,11 +3,11 @@
     Become a Sponsor — WATER JUSTICE FOR ALL AUSSIES
 </title>
 {% endblock title %} {% block container %}
-<div class="container-fluid">
+<div class="container">
     {% for key, value_list in output.items %}
     <div class="row">
         {% for i in value_list %}
-        <div class="col">
+        <div class="col-md-4">
             <h1 class="header1">{{i.title}}</h1>
             {% if i.image and i.image.strip %}
             <div class="card" style="width: 100%;">
