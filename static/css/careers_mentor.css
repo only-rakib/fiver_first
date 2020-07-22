@@ -9,6 +9,10 @@ h6
 }
 p
 {
+	font-weight: 550;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+	line-height: 2;
 	font-family: 'Libre Franklin', sans-serif;
 	font-size: 12px;
 	white-space:pre-line;

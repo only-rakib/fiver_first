@@ -20,16 +20,16 @@
 					</div>
 					<div class="top-right-menu">
 						<ul>
-							<li><a href="#">About</a>
+							<li><a href="{% url 'our_vision' %}">About</a>
 							<ul>
 								<li><a href="{% url 'our_vision' %}">Our vision</a></li>
 								<li><a href="{% url 'mentor_team' %}">Mentor Team</a></li>
 								<li><a href="{% url 'careers_mentor' %}">careers</a></li>
-								<li><a href="{% url 'under_construction' %}">Latest news</a></li>
+								<li><a href="{% url 'latest_news' %}">Latest news</a></li>
 								<li><a href="{% url 'contact' %}">Contact</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Campaigns</a>
+						<li><a href="{% url 'campaign-1' %}">Campaigns</a>
 						<ul>
 							<li><a href="{% url 'campaign-1' %}">Campaign 1</a></li>
 							<li><a href="{% url 'campaign-2' %}">Campaign 2</a></li>
@@ -37,13 +37,13 @@
 							<li><a href="{% url 'campaign-4' %}">Campaign 4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Impact</a>
+					<li><a href="{% url 'annual_report2016' %}">Impact</a>
 					<ul>
 						<li><a href="{% url 'annual_report2016' %}">2016 Anual Report</a></li>
 						<li><a href=" {% url 'success_stories' %} ">Success Stories</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Ways to Help</a>
+				<li><a href="{% url 'donate' %}">Ways to Help</a>
 				<ul>
 					<li><a href="{% url 'donate' %}">Donate</a></li>
 					<li><a href="{% url 'become_a_sponsor' %}">Become a Sponsor</a></li>

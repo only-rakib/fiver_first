@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="{%static 'css/all.css'%}">
-		<link rel="shortcut icon" type="image/x-icon" href="images/default-favicon.ico" />
+		
 		<link rel="stylesheet" href="{%static 'css/base.css'%}">
 	</head>
 	<body>
@@ -22,17 +22,17 @@
 					<div class="top-right-menu">
 						<ul>
 							<li>
-								<a href="#">About</a>
+								<a href="{% url 'our_vision' %}">About</a>
 								<ul>
 									<li><a href="{% url 'our_vision' %}">Our vision</a></li>
 									<li><a href="{% url 'mentor_team' %}">Mentor Team</a></li>
 									<li><a href="{% url 'careers_mentor' %}">careers</a></li>
-									<li><a href="#">Latest news</a></li>
+									<li><a href=" {% url 'latest_news' %}">Latest news</a></li>
 									<li><a href="{% url 'contact' %}">Contact</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="#">Campaigns</a>
+								<a href="{% url 'campaign-1' %}">Campaigns</a>
 								<ul>
 									<li><a href="{% url 'campaign-1' %}">Campaign 1</a></li>
 									<li><a href="{% url 'campaign-2' %}">Campaign 2</a></li>
@@ -41,14 +41,14 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">Impact</a>
+								<a href="{% url 'annual_report2016' %}">Impact</a>
 								<ul>
 									<li><a href="{% url 'annual_report2016' %}">2016 Anual Report</a></li>
 									<li><a href=" {% url 'success_stories' %} ">Success Stories</a></li>
 								</ul>
 							</li>
 							<li>
-								<a href="#">Ways to Help</a>
+								<a href="{% url 'donate' %}">Ways to Help</a>
 								<ul>
 									<li><a href="{% url 'donate' %}">Donate</a></li>
 									<li><a href="{% url 'become_a_sponsor' %}">Become a Sponsor</a></li>

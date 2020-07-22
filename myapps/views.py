@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import LatestNews
+from django.http import HttpResponse
 
 
 def home(request):
@@ -286,3 +288,19 @@ def campaign3View(request):
 
 def campaign4View(request):
     return render(request, 'campaign-4.html')
+
+
+def latestNewsView(request):
+
+    post = LatestNews.objects.all()
+    return render(request, 'latest_news.html', {'data': post})
+
+
+def latestNewsClickView(request, slug):
+    detail = LatestNews.objects.filter(slug=slug)
+    print(detail)
+    if detail.exists():
+        detail = detail.first()
+    else:
+        return HttpResponse("<h3>Page not found</h3>")
+    return render(request, "latest_news_click.html", {'detail': detail})

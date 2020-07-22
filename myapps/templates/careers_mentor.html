@@ -7,12 +7,12 @@
     <div class="row">
         {% for i in data %}
         <div class="col">
-            <h1>{{i.title}}</h1>
-            <p>
+            <h1 class="header1">{{i.title}}</h1>
+            <p class="para">
                 {{i.description}}
             </p>
-            <h6>{{i.qualifications}}</h6>
-            <p>
+            <h6 class="header6">{{i.qualifications}}</h6>
+            <p class="para">
                 {{i.details}}
             </p>
             {% if i.button_name and i.button_name.strip %}
@@ -33,7 +33,7 @@
 
 </div>
 {% endblock container %} {% block style %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/careers_mentor.css' %} " />
+<link rel="stylesheet" type="text/css" href="{% static 'css/template.css' %} " />
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

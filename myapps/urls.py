@@ -24,5 +24,10 @@ urlpatterns = [
          name='campaign-3'),
     path('campaign-4/', views.campaign4View,
          name='campaign-4'),
+    path('latest_news/', views.latestNewsView,
+         name='latest_news'),
+    path('latest_news/<slug:slug>', views.latestNewsClickView,
+         name='latest_news_click'),
+
 
 ]
