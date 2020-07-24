@@ -1,146 +1,121 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>WATER JUSTICE FOR ALL AUSSIES</title>
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="{% static 'css/all.css' %} ">
-		<link rel="shortcut icon" type="image/x-icon" href="{%static 'images/default-favicon.ico'%}">
-		<link rel="stylesheet" href="{%static 'css/style.css'%}">
-	</head>
-	<body>
-		<!-- header part start -->
-		<div class="full-wrapper header-bg">
-			<div class="wrapper">
-				<div class="nav-bar">
-					<div class="top-left">
-						<span>WATER JUSTICE FOR ALL AUSSIES</span>
-					</div>
-					<div class="top-right-menu">
-						<ul>
-							<li><a href="{% url 'our_vision' %}">About</a>
+    <head>
+    <meta charset="UTF-8">
+    <title>WATER JUSTICE FOR ALL AUSSIES</title>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'css/all.css' %} ">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/default-favicon.ico' %} " />
+    <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+    </head>
+    <body>
+	
+		<!-- <div class="fullscreen-video-wrap"> -->
+				<!-- <video src="code.mov" autoplay="true" loop="true"></video> -->
+			<!-- </div> -->
+		<header>
+			
+			<div class="nav-bar">
+				<div class="top-left">
+					<span><a style="text-decoration: none;" href="{% url 'home' %}">WATER JUSTICE FOR ALL AUSSIES</a></span>
+				</div>
+				<div class="top-right-menu">
+					<ul>
+						<li><a href="{% url 'our_vision' %}">About</a>
 							<ul>
 								<li><a href="{% url 'our_vision' %}">Our vision</a></li>
 								<li><a href="{% url 'mentor_team' %}">Mentor Team</a></li>
 								<li><a href="{% url 'careers_mentor' %}">careers</a></li>
-								<li><a href="{% url 'latest_news' %}">Latest news</a></li>
+								<li><a href="{% url 'latest_news' %}">Latesh news</a></li>
 								<li><a href="{% url 'contact' %}">Contact</a></li>
 							</ul>
 						</li>
 						<li><a href="{% url 'campaign-1' %}">Campaigns</a>
-						<ul>
-							<li><a href="{% url 'campaign-1' %}">Campaign 1</a></li>
-							<li><a href="{% url 'campaign-2' %}">Campaign 2</a></li>
-							<li><a href="{% url 'campaign-3' %}">Campaign 3</a></li>
-							<li><a href="{% url 'campaign-4' %}">Campaign 4</a></li>
-						</ul>
-					</li>
-					<li><a href="{% url 'annual_report2016' %}">Impact</a>
-					<ul>
-						<li><a href="{% url 'annual_report2016' %}">2016 Anual Report</a></li>
-						<li><a href=" {% url 'success_stories' %} ">Success Stories</a></li>
+							<ul>
+								<li><a href="{% url 'campaign-1' %}">Campaign 1</a></li>
+								<li><a href="{% url 'campaign-2' %}">Campaign 2</a></li>
+								<li><a href="{% url 'campaign-3' %}">Campaign 3</a></li>
+								<li><a href="{% url 'campaign-4' %}">Campaign 4</a></li>
+							</ul>
+						</li>
+						<li><a href="{% url 'success_stories' %}">Impact</a>
+							<ul>
+								<li><a href="{% url 'annual_report2016' %}">2016 Anual Report</a></li>
+								<li><a href="{% url 'success_stories' %}">Success Stories</a></li>
+							</ul>
+						</li>
+						<li><a href="{% url 'donate' %}">Ways to Help</a>
+							<ul>
+								<li><a href="{% url 'donate' %}">Donate</a></li>
+								<li><a href="{% url 'become_a_sponsor' %}">Become a Sponsor</a></li>
+								<li><a href="{% url 'careers_mentor' %}">Join the Team</a></li>
+							</ul>
+						</li>
+						<li><a href="{% url 'donate' %}">Donate</a>
+							
+						</li>
 					</ul>
-				</li>
-				<li><a href="{% url 'donate' %}">Ways to Help</a>
-				<ul>
-					<li><a href="{% url 'donate' %}">Donate</a></li>
-					<li><a href="{% url 'become_a_sponsor' %}">Become a Sponsor</a></li>
-					<li><a href="{% url 'careers_mentor' %}">Join the Team</a></li>
-				</ul>
-			</li>
-			<li><a href="{% url 'donate' %}">Donate</a>
+				</div>
+			</div>
+			<div class="header-text-area">
+					<div class="header-text">
+						<h1>Your Common Wealth - Your Water</h1>
+					</div>
+				</div>
+				<div class="banner-text">
+					<a href="#">Your Community Campaign
+					<span><i class="fas fa-arrow-right"></i></span>
+					</a>
+					
+				</div>
+		</header>
+        <div class="container post-header">
+			<h2>Water rights for all is up to you …</h2>
+				<div class="content-iteam-bg">
+					<div class="content-iteam">
+						<img src="{% static 'images/Australian+green+park+landscape.jpg' %} " alt="Iteamimg" />
+						<h4>Your Community Campaign</h4>
+						<p>What is clear from the many dozens of impacted 
+						communities around our nation is that they desperately need a scaffold - 
+						to do what is needed to be done - to fight for 
+						their self evident water rights - for themselves.</p>
+						<a href="#">readmore</a>
+					</div>
+					<div class="content-iteam">
+						<img src="{% static 'images/Australian+green+park+landscape.jpg' %} " alt="Iteamimg" />
+						<h4>Your Community Campaign</h4>
+						<p>What is clear from the many dozens of impacted 
+						communities around our nation is that they desperately need a scaffold - 
+						to do what is needed to be done - to fight for 
+						their self evident water rights - for themselves.</p>
+						<a href="#">readmore</a>
+					</div>
+					<div class="content-iteam">
+						<img src="{% static 'images/Australian+green+park+landscape.jpg' %} " alt="Iteamimg" />
+						<h4>Your Community Campaign</h4>
+						<p>What is clear from the many dozens of impacted 
+						communities around our nation is that they desperately need a scaffold - 
+						to do what is needed to be done - to fight for 
+						their self evident water rights - for themselves.</p>
+						<a href="#">readmore</a>
+					</div>
+					<div class="content-iteam">
+						<img src="{% static 'images/Australian+green+park+landscape.jpg' %} " alt="Iteamimg" />
+						<h4>Your Community Campaign</h4>
+						<p>What is clear from the many dozens of impacted 
+						communities around our nation is that they desperately need a scaffold - 
+						to do what is needed to be done - to fight for 
+						their self evident water rights - for themselves.</p>
+						<a href="#">readmore</a>
+					</div>
+				
+				
+				</div>
+            
+            
+        </div>
 			
-		</li>
-	</ul>
-</div>
-</div>
-<div class="clr"></div>
-</div>
-<div class="wrapper">
-<div class="header-text-area">
-<div class="header-text">
-	<h1>Your Common Wealth - Your Water</h1>
-</div>
-</div>
-<div class="banner-text">
-<a href="#">Your Community Campaign
-	<span><i class="fas fa-arrow-right"></i></span>
-</a>
-
-</div>
-</div>
-<div class="clr"></div>
-</div>
-<!-- header part end -->
-<!-- footer part start -->
-<div class="full-wrapper footer-bg">
-<div class="wrapper">
-<div class="footer-content">
-<div class="footer-left">
-	<div class="footer-list">
-		<h3>About</h3>
-		<ul>
-			
-			<li><a href="#">Our vision</a></li>
-			<li><a href="#">Mentor Team</a></li>
-			<li><a href="#">careers</a></li>
-			<li><a href="#">Latesh news</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</div>
-	<div class="footer-list">
-		<h3>Campaigns</h3>
-		<ul>
-			<li><a href="#">Campaign 1</a></li>
-			<li><a href="#">Campaign 2</a></li>
-			<li><a href="#">Campaign 3</a></li>
-			<li><a href="#">Campaign 4</a></li>
-		</ul>
-	</div>
-	<div class="footer-list">
-		<h3>Impact</h3>
-		<ul>
-			<li><a href="#">2016 Anual Report</a></li>
-			<li><a href="#">Success Stories</a></li>
-		</ul>
-	</div>
-	<div class="footer-list">
-		<h3>Ways to Help</h3>
-		<ul>
-			
-			<li><a href="#">Donate</a></li>
-			<li><a href="#">Become a Sponsor</a></li>
-			<li><a href="#">Join the Team</a></li>
-			
-		</ul>
-	</div>
-	<div class="footer-list">
-		<h3>blog</h3>
-		
-		
-	</div>
-	<div class="clr"></div>
-</div>
-
-<div class="footer-right">
-	<div class="footer-content-lt">
-		<h3>Subscribe to our Newsletter</h3>
-		<p>Here is a description of your newsletter. Ut dui quam, dignissim sed nisl sed, viverra tempor ipsum. Nunc sollicitudin ipsum at purus
-		tincidunt eleifend. Duis ut neque ullamcorper elit sagittis facilisis vel quis. </p>
-	</div>
-</div>
-<div class="clr"></div>
-</div>
-<div class="footer-text">
-<p>This site & digital infrastructure is sponsored by:</p>
-<p>The RepresentUs - Think Tank :</p>
-<p>The RepresentUs - Australia - Movement :</p>
-<p> Upward Enterprises :</p>
-</div>
-</div>
-</div>
-
-
-<!-- footer part end -->
+    </body>
+</html>

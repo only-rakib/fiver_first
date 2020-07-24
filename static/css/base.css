@@ -53,13 +53,14 @@ img{
 }
 .top-right-menu{
 	width:727px;
-	float:left;
-	text-align:right;
+	float:right;
+	text-align:left;
 }
 
 .top-right-menu ul li{
 	display:inline-block;
 	position:relative;
+	/*overflow: visible;*/
 }
 .top-right-menu ul li:hover > ul{
 	visibility:visible;

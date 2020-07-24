@@ -17,6 +17,12 @@
         font-family: 'Fjalla One', sans-serif;
         font-size: 14px;
     }
+    .btn-read {
+    
+    font-size: 10px;
+    padding: 5px 10px;
+    
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -28,65 +34,17 @@
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .header1 {
-        clear: both;
-        font-family: 'Fjalla One', sans-serif;
-        font-weight: 599;
-        /*font-style: normal;*/
-        font-size: 50px;
-        letter-spacing: 1px;
-    }
-    .header2 {
-        font-size: 30px;
-        font-weight: bold;
-        font-family: 'Fjalla One', sans-serif;
-    }
-    .header6 {
-        font-family: 'Fjalla One', sans-serif;
-        font-size: 14px;
-    }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-    .header1 {
-        clear: both;
-        font-family: 'Fjalla One', sans-serif;
-        font-weight: 599;
-        /*font-style: normal;*/
-        font-size: 50px;
-        letter-spacing: 1px;
-    }
-    .header2 {
-        font-size: 30px;
-        font-weight: bold;
-        font-family: 'Fjalla One', sans-serif;
-    }
-    .header6 {
-        font-family: 'Fjalla One', sans-serif;
-        font-size: 14px;
-    }
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .header1 {
-        clear: both;
-        font-family: 'Fjalla One', sans-serif;
-        font-weight: 599;
-        /*font-style: normal;*/
-        font-size: 50px;
-        letter-spacing: 1px;
-    }
-    .header2 {
-        font-size: 30px;
-        font-weight: bold;
-        font-family: 'Fjalla One', sans-serif;
-    }
-    .header6 {
-        font-family: 'Fjalla One', sans-serif;
-        font-size: 14px;
-    }
+    
 }

@@ -1,7 +1,10 @@
-*{
+html {
     margin: 0;
     padding: 0;
-    outline: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
@@ -12,37 +15,75 @@ ul,ol{
 img{
     vertical-align: middle;
 }
-.clr {
-    clear: both;
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-.full-wrapper {
-    width: 100%;
-    
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: left;
+    text-transform: uppercase;
 }
-.wrapper {
-    max-width:1449px;
-    margin: 0 auto;
+.fullscreen-video-wrap{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	overflow-y: scroll;
+    overflow-x: hidden;
 }
-/*=================== header part css ======================*/
-.header-bg{
-	background: url(../images/WaterHomPageAlternative.jpg);
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:cover;
-	
+.fullscreen-video-wrap video{
+	min-width:100%;
+	min-height:100%;
+}
+
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
 }
 .nav-bar{
 	background-color: transparent;
 	width:100%;
 	padding-top:50px;
+	text-align:left;
+	padding-left:50px;
 }
 .top-left{
 	width:722px;
 	float:left;
 }
 .top-left span{
-	color: #0d0202;
+	color: #000;
 	font-family: 'Fjalla One', sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -96,12 +137,14 @@ img{
 }
 .header-text-area{
 	padding-top:205px;
+	padding-left:50px;
 	width: 100%;
 }
 .header-text{
 	text-align: left;
 }
 .header-text h1{
+	color:#000;
 	font-family: 'Fjalla One', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -113,6 +156,7 @@ img{
 .banner-text{
 	padding-top:175px;
 	padding-bottom:230px;
+	padding-left:50px;
 	width: 100%;
 }
 	
@@ -132,105 +176,70 @@ img{
 	font-size:15px;
   
 }
-/*=================== header part css End ======================*/
-
-/* =====================footer from start here==================== */
-.footer-bg{
-	background-color:#000;
+/*===================== Content area=============================== */
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: #fff;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: #000;
+	width:1449px;
+}
+.content-iteam-bg{
+	width:1193px;
+	padding-left:255px;
 	
 }
-.footer-content{
+.post-header h2{
+	font-family: Fjalla One;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 32px;
+	letter-spacing: .02em;
+	line-height: 1.3em;
+	text-transform: none;
+}
+.content-iteam{
+	width:570px;
+	font-family: Libre Franklin;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .06em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: #000;
+	padding-left:20px;
+	padding-top:20px;
+	float:left;
+
+}	
+.content-iteam img, .content-iteam p,.content-item btn{
 	width:100%;
-	padding:95px 0;
-}
-.footer-left{
-	width:850px;
-	float:left;
-}
-.footer-right{
-	width:599px;
-	float:left;
-}
-.footer-right  {
-	width:599px;
-	float:left;
-}
+	font-family: Libre Franklin;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .06em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: #000;
 
-.footer-list{
-	width: 170px;
-	float:left;
-}
-
-.footer-list ul{
-	padding:10px;
-}
-.footer-list ul li a{
-	color:#fff;
-	font-family: 'Fjalla One', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 13px;
-	letter-spacing: .06em;
-	line-height: 1.4em;
-	text-transform: uppercase;
-}
-.footer-list h3{
-	padding-top:15px;
-	padding-left:10px;
-	color:#a6a6a6;
-	font-family: 'Fjalla One', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 13px;
-	letter-spacing: .06em;
-	line-height: 1.4em;
-	text-transform: uppercase;
-}
-.footer-content h3{
-	color:#fff;
-	padding-top:15px;
-	padding-left:10px;
-	color:#a6a6a6;
-	font-family: 'Fjalla One', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 13px;
-	letter-spacing: .06em;
-	line-height: 1.4em;
-	text-transform: uppercase;
-}
-.footer-content-lt p{
-	padding-top:15px;
-	padding-left:60px;
-	padding-right:230px;
-	color:#fff;
-	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 12px;
-	letter-spacing: .06em;
-	line-height: 1.8em;
-	text-transform: none;
-}
-.footer-text{
-	width:350px;
-	padding-left:475px;
-	padding-bottom:100px;
 	
-}
-.footer-text p{
-	text-align:left;
-	color:#fff;
-	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 12px;
-	letter-spacing: .06em;
-	line-height: 1.8em;
-	text-transform: none;
-	padding-top:10px;
-	
+}	
+.content-iteam h4{
+    font-family: Fjalla One;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: .02em;
+    line-height: 1.3em;
+    text-transform: none;
+
 }
 
-/* =====================footer from end here==================== */
+
 
