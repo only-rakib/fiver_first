@@ -1,17 +1,39 @@
+
+body{
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	letter-spacing: .06em;
+	line-height: 1.8em;
+}
 .header1
 {
-	clear:both;
+	/*clear:both;
 	font-family: 'Fjalla One', sans-serif;
 	font-weight: 599;
-	/*font-style: normal;*/
+	font-style: normal;
 	font-size: 50px;
-	letter-spacing: 1px;
+	letter-spacing: 1px;*/
+	font-family: 'Fjalla One',sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 54px;
+	letter-spacing: .01em;
+	line-height: 1.3em;
+	text-transform: none;
 }	
 .header2
 {
-	font-size: 30px;
+	/*font-size: 30px;
 	font-weight: bold;
 	font-family: 'Fjalla One', sans-serif;
+	font-style: normal;*/
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 32px;
+	letter-spacing: .02em;
+	line-height: 1.3em;
+	text-transform: none;
 }
 .header6
 {
@@ -21,7 +43,7 @@
 .para
 {
 	white-space:pre-line;
-	font-family: 'Libre Franklin', sans-serif;
+	/*font-family: 'Libre Franklin', sans-serif;*/
 	font-size: small;
 	text-align: left;
 	padding-right: 4%;
