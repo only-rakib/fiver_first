@@ -5,8 +5,10 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('home/', views.home, name='home'),
     path('our_vision/', views.ourVisionView, name='our_vision'),
-    path('careers_mentor/', views.careersMentorView, name='careers_mentor'),
     path('mentor_team/', views.mentorTeamView, name='mentor_team'),
+    path('careers_mentor/', views.careersMentorView, name='careers_mentor'),
+    path('latest_news/', views.latestNewsView,
+         name='latest_news'),
     path('contact/', views.contactView, name='contact'),
     path('donate/', views.donateView, name='donate'),
     path('become_a_sponsor/', views.BecomeaSponsorView, name='become_a_sponsor'),
@@ -25,8 +27,7 @@ urlpatterns = [
          name='campaign-3'),
     path('campaign-4/', views.campaign4View,
          name='campaign-4'),
-    path('latest_news/', views.latestNewsView,
-         name='latest_news'),
+
     path('latest_news/<slug:slug>', views.latestNewsClickView,
          name='latest_news_click'),
 

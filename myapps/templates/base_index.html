@@ -13,8 +13,8 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top">
-        <div class="container-fluid custom-container">
-            <a class="navbar-brand Nav-head" href="#">WATER JUSTICE FOR ALL AUSSIES</a>
+        <div class="container-fluid custom-container-nav">
+            <a class="navbar-brand Nav-head" href="{% url 'home' %}">WATER JUSTICE FOR ALL AUSSIES</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -22,55 +22,55 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown text-uppercase">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dropdown
+                        <a class="nav-link dropdown-toggle" href="{% url 'our_vision' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								About
 							</a>
                         <div class="dropdown-menu custom-style" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item custom-style" href="#">Action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
+                            <a class="dropdown-item custom-style" href="{% url 'our_vision' %}">Our vision</a>
+                            <a class="dropdown-item custom-style" href="{% url 'mentor_team' %}">Mentor Team</a>
+                            <a class="dropdown-item custom-style" href="{% url 'careers_mentor' %}">careers</a>
+                            <a class="dropdown-item custom-style" href="{% url 'latest_news' %}">Latest news</a>
+                            <a class="dropdown-item custom-style" href="{% url 'contact' %}">Contact</a>
 
                         </div>
                     </li>
                     <li class="nav-item dropdown text-uppercase">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dropdown
+                        <a class="nav-link dropdown-toggle" href="{%url 'campaign-1' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Campaigns
 							</a>
                         <div class="dropdown-menu custom-style" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item custom-style" href="#">Action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
+                            <a class="dropdown-item custom-style" href="{%url 'campaign-1' %}">Campaigns 1</a>
+                            <a class="dropdown-item custom-style" href="{%url 'campaign-2' %}">Campaigns 2</a>
+                            <a class="dropdown-item custom-style" href="{%url 'campaign-3' %}">Campaigns 3</a>
+                            <a class="dropdown-item custom-style" href="{%url 'campaign-4' %}">Campaigns 4</a>
 
                         </div>
                     </li>
                     <li class="nav-item dropdown text-uppercase">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dropdown
+                        <a class="nav-link dropdown-toggle" href="{% url 'success_stories' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Impact
 							</a>
                         <div class="dropdown-menu custom-style" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item custom-style" href="#">Action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
+                            <a class="dropdown-item custom-style" href="{% url 'annual_report2016' %}">2016 Anual Report</a>
+                            <a class="dropdown-item custom-style" href="{% url 'success_stories' %}">Success Stories</a>
+                            
 
                         </div>
                     </li>
                     <li class="nav-item dropdown text-uppercase">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dropdown
+                        <a class="nav-link dropdown-toggle" href="{% url 'donate' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Ways to Help
 							</a>
                         <div class="dropdown-menu custom-style" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item custom-style" href="#">Action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
-                            <a class="dropdown-item custom-style" href="#">Another action</a>
+                            <a class="dropdown-item custom-style" href="{% url 'donate' %}">Donate</a>
+                            <a class="dropdown-item custom-style" href="{% url 'become_a_sponsor' %}">Become a Sponsor</a>
+                            <a class="dropdown-item custom-style" href="{% url 'careers_mentor' %}">Join the Team</a>
+                           
 
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Donate</a>
+                        <a class="nav-link text-uppercase" href="{% url 'donate' %}">Donate</a>
 
                     </li>
                 </ul>
@@ -82,65 +82,66 @@
     {% block container %} {% endblock %}
     <!-- footer part start -->
     <div class="container-fluid section footer-section">
-        <div class="container-fluid custom-container">
-            <div class="row footer-content">
-                <div class="col-mid-2 footer-list">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="#">Our vision</a></li>
-                        <li><a href="#">Mentor Team</a></li>
-                        <li><a href="#">careers</a></li>
-                        <li><a href="#">Latesh news</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-mid-2 footer-list">
-                    <h3>Campaigns</h3>
-                    <ul>
-                        <li><a href="#">Campaign 1</a></li>
-                        <li><a href="#">Campaign 2</a></li>
-                        <li><a href="#">Campaign 3</a></li>
-                        <li><a href="#">Campaign 4</a></li>
-                    </ul>
-                </div>
-                <div class="col-mid-2 footer-list">
-                    <h3>Impact</h3>
-                    <ul>
-                        <li><a href="#">2016 Anual Report</a></li>
-                        <li><a href="#">Success Stories</a></li>
-                    </ul>
-                </div>
-                <div class="col-mid-2 footer-list">
-                    <h3>Ways to Help</h3>
-                    <ul>
-
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Become a Sponsor</a></li>
-                        <li><a href="#">Join the Team</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-mid-2 footer-list">
-                    <h3>blog</h3>
-
-                </div>
-                <div class="col-mid-2 footer-content-bg">
-                    <h3>Subscribe to our Newsletter</h3>
-                    <p>Here is a description of your newsletter. Ut dui quam, dignissim sed nisl sed, viverra tempor ipsum. Nunc sollicitudin ipsum at purus tincidunt eleifend. Duis ut neque ullamcorper elit sagittis facilisis vel quis. </p>
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-md-4"></div>
-                <div class=" col-md-4 footer-text-bg">
-                    <p>This site & digital infrastructure is sponsored by:</p>
-                    <p>The RepresentUs - Think Tank :</p>
-                    <p>The RepresentUs - Australia - Movement :</p>
-                    <p>Upward Enterprises</p>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-    </div>
+			<div class="container-fluid custom-container">
+				<div class="row footer-content">
+					<div class="col-mid-2 footer-list">
+						<h3>About</h3>
+						<ul>
+							<li><a href=" {% url 'our_vision' %}">Our vision</a></li>
+							<li><a href=" {% url 'mentor_team' %}">Mentor Team</a></li>
+							<li><a href=" {% url 'careers_mentor' %}">careers</a></li>
+							<li><a href=" {% url 'latest_news' %}">Latest news</a></li>
+							<li><a href=" {% url 'contact' %}">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-mid-2 footer-list">
+						<h3>Campaigns</h3>
+						<ul>
+							<li><a href=" {% url 'campaign-1' %}">Campaign 1</a></li>
+							<li><a href=" {% url 'campaign-2' %}">Campaign 2</a></li>
+							<li><a href=" {% url 'campaign-3' %}">Campaign 3</a></li>
+							<li><a href=" {% url 'campaign-4' %}">Campaign 4</a></li>
+						</ul>
+					</div>
+					<div class="col-mid-2 footer-list">
+						<h3>Impact</h3>
+						<ul>
+							<li><a href=" {% url 'annual_report2016' %}">2016 Anual Report</a></li>
+							<li><a href=" {% url 'success_stories' %}">Success Stories</a></li>
+						</ul>
+					</div>
+					<div class="col-mid-2 footer-list">
+						<h3>Ways to Help</h3>
+						<ul>
+							
+							<li><a href=" {% url 'donate' %}">Donate</a></li>
+							<li><a href=" {% url 'become_a_sponsor' %}">Become a Sponsor</a></li>
+							<li><a href=" {% url 'careers_mentor' %}">Join the Team</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-mid-2 footer-list">
+						<h3>blog</h3>
+						
+					</div>
+					<div class="col-mid-2 footer-content-bg">
+						<h3>Subscribe to our Newsletter</h3>
+						<p>Here is a description of your newsletter. Ut dui quam, dignissim sed nisl sed, viverra tempor ipsum. Nunc sollicitudin ipsum at purus
+						tincidunt eleifend. Duis ut neque ullamcorper elit sagittis facilisis vel quis. </p>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="col-md-4"></div>
+					<div class=" col-md-4 footer-text-bg">
+						<p>This site & digital infrastructure is sponsored by:</p>
+						<p>The RepresentUs - Think Tank :</p>
+						<p>The RepresentUs - Australia - Movement :</p>
+						<p>Upward Enterprises</p>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
     
     <!-- footer part end -->
     {% block style %} {% endblock %}
