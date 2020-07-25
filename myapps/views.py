@@ -304,3 +304,7 @@ def latestNewsClickView(request, slug):
     else:
         return HttpResponse("<h3>Page not found</h3>")
     return render(request, "latest_news_click.html", {'detail': detail})
+
+
+def interactView(request):
+    return render(request, 'interact.html')

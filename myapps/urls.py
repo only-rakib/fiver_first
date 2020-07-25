@@ -30,6 +30,8 @@ urlpatterns = [
 
     path('latest_news/<slug:slug>', views.latestNewsClickView,
          name='latest_news_click'),
+    path('interact/', views.interactView,
+         name='interact'),
 
 
 ]

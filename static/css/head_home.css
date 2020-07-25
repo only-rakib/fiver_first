@@ -1,0 +1,98 @@
+
+.container-fluid.custom-container
+{
+	padding-right:50px; 
+	padding-left: 50px; 
+	padding-top: 40px;
+
+}
+.navbar-brand.Nav-head
+{
+	font-family: Fjalla One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+    letter-spacing: .04em;
+    line-height: 1em;
+    color: black;
+}
+.nav-link
+{
+	font-family: Fjalla One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .06em;
+    color: black;
+}
+.dropdown-toggle::after { 
+    content: none; 
+}
+.dropdown-menu
+{
+	background-color: white;
+}
+.dropdown-item.custom-style{
+	background-color: black;
+	color: white;
+	white-space: nowrap;
+    text-align: left;
+    font-family: Fjalla One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+
+}
+
+.dropdown .dropdown-menu a{
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+/*remove box navbar start here
+  Source from https://stackoverflow.com/questions/32780000/how-to-remove-the-white-circling-box-upon-clicking-in-firefox-on-bootstrap-navba
+    only a:focus works well;
+  */
+
+.dropdown a
+{
+    color: #000;
+}
+a:focus {
+  outline: 0;
+  
+}
+/*
+.navbar-light .navbar-nav .nav-link {
+	color: #F8F8FF;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover ative {
+	color: #fff;
+}
+*/
+
+/* .navbar.navbar-inverse .navbar-brand { */
+  /* color: #fff; */
+/* } */
+/* .navbar.navbar-inverse .navbar-nav > li > a { */
+  /* color: #fff; */
+/* } */
+
+/*https://stackoverflow.com/questions/50668594/removing-the-border-color-of-the-navbar-toggler-hamburger-icon-bootstrap-4*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-nav .dropdown-menu {
+    float: left;
+    border: none;
+
+}

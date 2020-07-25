@@ -1,121 +1,315 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <title>WATER JUSTICE FOR ALL AUSSIES</title>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="{% static 'css/all.css' %} ">
-	<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/default-favicon.ico' %} " />
-    <link rel="stylesheet" href="{% static 'css/style.css' %} ">
-    </head>
-    <body>
-	
-		<!-- <div class="fullscreen-video-wrap"> -->
-				<!-- <video src="code.mov" autoplay="true" loop="true"></video> -->
-			<!-- </div> -->
-		<header>
-			
-			<div class="nav-bar">
-				<div class="top-left">
-					<span><a style="text-decoration: none;" href="{% url 'home' %}">WATER JUSTICE FOR ALL AUSSIES</a></span>
-				</div>
-				<div class="top-right-menu">
-					<ul>
-						<li><a href="{% url 'our_vision' %}">About</a>
-							<ul>
-								<li><a href="{% url 'our_vision' %}">Our vision</a></li>
-								<li><a href="{% url 'mentor_team' %}">Mentor Team</a></li>
-								<li><a href="{% url 'careers_mentor' %}">careers</a></li>
-								<li><a href="{% url 'latest_news' %}">Latesh news</a></li>
-								<li><a href="{% url 'contact' %}">Contact</a></li>
-							</ul>
-						</li>
-						<li><a href="{% url 'campaign-1' %}">Campaigns</a>
-							<ul>
-								<li><a href="{% url 'campaign-1' %}">Campaign 1</a></li>
-								<li><a href="{% url 'campaign-2' %}">Campaign 2</a></li>
-								<li><a href="{% url 'campaign-3' %}">Campaign 3</a></li>
-								<li><a href="{% url 'campaign-4' %}">Campaign 4</a></li>
-							</ul>
-						</li>
-						<li><a href="{% url 'success_stories' %}">Impact</a>
-							<ul>
-								<li><a href="{% url 'annual_report2016' %}">2016 Anual Report</a></li>
-								<li><a href="{% url 'success_stories' %}">Success Stories</a></li>
-							</ul>
-						</li>
-						<li><a href="{% url 'donate' %}">Ways to Help</a>
-							<ul>
-								<li><a href="{% url 'donate' %}">Donate</a></li>
-								<li><a href="{% url 'become_a_sponsor' %}">Become a Sponsor</a></li>
-								<li><a href="{% url 'careers_mentor' %}">Join the Team</a></li>
-							</ul>
-						</li>
-						<li><a href="{% url 'donate' %}">Donate</a>
-							
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="header-text-area">
-					<div class="header-text">
-						<h1>Your Common Wealth - Your Water</h1>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>WATER JUSTICE FOR ALL AUSSIES</title>
+		
+		<link rel="shortcut icon" type="image/x-icon" href="images/default-favicon.ico" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href=" {% static 'css/all.css' %} ">
+		<link rel="stylesheet" href="{% static 'css/style_home.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/head_home.css' %} ">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/footer_home.css' %} ">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/responsive_home.css' %} ">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+	</head>
+	<body>
+		
+		<div class="bacground-video">
+			<video class="visible-desktop" id="hero-vid" poster="#" autoplay loop muted>
+				<source type="video/mp4" src="{% static 'video/video-code.mp4' %}"></source>
+			</video>
+			<!-- Navbar start -->
+			<nav class="navbar navbar-expand-md navbar-light">
+				<div class="container-fluid custom-container-nav">
+					<a class="navbar-brand Nav-head" href=" {% url 'home' %}">WATER JUSTICE FOR ALL AUSSIES</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id = "navbarNav">
+						
+						<ul class="navbar-nav ml-auto" >
+							<li class="nav-item dropdown text-uppercase">
+								<a class="nav-link dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									About
+								</a>
+								<div class="dropdown-menu custom-style" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item custom-style" href=" {% url 'our_vision' %}">Our Vision</a>
+									<a class="dropdown-item custom-style" href=" {% url 'mentor_team' %}">Mentor Team</a>
+									<a class="dropdown-item custom-style" href=" {% url 'careers_mentor' %}">Careers</a>
+									<a class="dropdown-item custom-style" href=" {% url 'latest_news' %}">Latest News</a>
+									<a class="dropdown-item custom-style" href=" {% url 'contact' %}">Contact</a>
+									
+								</div>
+							</li>
+							<li class="nav-item dropdown text-uppercase">
+								<a class="nav-link dropdown-toggle" href="{% url 'campaign-1' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Campaigns
+								</a>
+								<div class="dropdown-menu custom-style" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item custom-style" href="{% url 'campaign-1' %}">Campaign-1</a>
+									<a class="dropdown-item custom-style" href="{% url 'campaign-2' %}">Campaign-2</a>
+									<a class="dropdown-item custom-style" href="{% url 'campaign-3' %}">Campaign-3</a>
+									<a class="dropdown-item custom-style" href="{% url 'campaign-4' %}">Campaign-4</a>
+									
+								</div>
+							</li>
+							<li class="nav-item dropdown text-uppercase">
+								<a class="nav-link dropdown-toggle" href="{% url 'success_stories' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Impact
+								</a>
+								<div class="dropdown-menu custom-style" aria-labelledby="navbarDropdown">
+									
+									<a class="dropdown-item custom-style" href="{% url 'annual_report2016' %}">2016 Anual Report</a>
+									<a class="dropdown-item custom-style" href="{% url 'success_stories' %}">	Success Stories</a>
+									
+									
+								</div>
+							</li>
+							<li class="nav-item dropdown text-uppercase">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Ways to Help
+								</a>
+								<div class="dropdown-menu custom-style" aria-labelledby="navbarDropdown">
+									
+									<a class="dropdown-item custom-style" href="{% url 'donate' %}">Donate</a>
+									<a class="dropdown-item custom-style" href="{% url 'become_a_sponsor' %}">Become a Sponsor </a>
+									<a class="dropdown-item custom-style" href="{% url 'careers_mentor' %}">Join the team</a>
+									
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-uppercase" href="{% url 'donate' %}">Donate</a>
+								
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="banner-text">
-					<a href="#">Your Community Campaign
-					<span><i class="fas fa-arrow-right"></i></span>
-					</a>
+			</nav>
+			
+			<div class="container-fluid custom-container" >
+				<div class="row" style="margin-top: 12%">
+					<div class="col-md-6">
+						<h1 class="header1" style="color: black">Your Common Wealth - Your Water</h1>
+					</div>
 					
 				</div>
-		</header>
-        <div class="container post-header">
-			<h2>Water rights for all is up to you …</h2>
-				<div class="content-iteam-bg">
-					<div class="content-iteam">
-						<img src="{% static 'images/Australian+green+park+landscape.jpg' %} " alt="Iteamimg" />
-						<h4>Your Community Campaign</h4>
-						<p>What is clear from the many dozens of impacted 
-						communities around our nation is that they desperately need a scaffold - 
-						to do what is needed to be done - to fight for 
-						their self evident water rights - for themselves.</p>
-						<a href="#">readmore</a>
+				<div class="row" style="margin-top:13% ">
+					<div class="col-md-4">
+						<h6 class="header6"><a href=" {% url 'campaign-1' %}">Your Community Campaign<i class="fas fa-arrow-right"></i></a></h1>
 					</div>
-					<div class="content-iteam">
-						<img src="{% static 'images/Australian+green+park+landscape.jpg' %} " alt="Iteamimg" />
-						<h4>Your Community Campaign</h4>
-						<p>What is clear from the many dozens of impacted 
-						communities around our nation is that they desperately need a scaffold - 
-						to do what is needed to be done - to fight for 
-						their self evident water rights - for themselves.</p>
-						<a href="#">readmore</a>
-					</div>
-					<div class="content-iteam">
-						<img src="{% static 'images/Australian+green+park+landscape.jpg' %} " alt="Iteamimg" />
-						<h4>Your Community Campaign</h4>
-						<p>What is clear from the many dozens of impacted 
-						communities around our nation is that they desperately need a scaffold - 
-						to do what is needed to be done - to fight for 
-						their self evident water rights - for themselves.</p>
-						<a href="#">readmore</a>
-					</div>
-					<div class="content-iteam">
-						<img src="{% static 'images/Australian+green+park+landscape.jpg' %} " alt="Iteamimg" />
-						<h4>Your Community Campaign</h4>
-						<p>What is clear from the many dozens of impacted 
-						communities around our nation is that they desperately need a scaffold - 
-						to do what is needed to be done - to fight for 
-						their self evident water rights - for themselves.</p>
-						<a href="#">readmore</a>
-					</div>
-				
-				
+					
 				</div>
-            
-            
-        </div>
+			</div>
+		</div>
+		
+		<div class="ParallaxContent">
+			<div class="container-fluid custom-container">
+				<div class="row content-header" ><h2 class="header2">Water rights for all is up to you …</h2></div>
+				
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-5">
+						<img src="{% static 'images/Australian+green+park+landscape.jpg' %}" class="img-fluid" alt="Responsive image">
+						<h2 class="header2 row_spaceing">Your Community Campaign</h2>
+						<p>What is clear from the many dozens of impacted communities around our nation is that they desperately need a scaffold - to do what is needed to be done - to fight for their self evident water rights - for themselves.</p>
+						<a href="{% url 'campaign-1' %}"> Read More
+							<span><i class="fas fa-arrow-right"></i></span>
+						</a>
+					</div>
+					
+					<div class="col-md-5">
+						<img src="{% static 'images/Stream+in+forest.jpg' %}" class="img-fluid" alt="Responsive image">
+						<h2 class="header2 row_spaceing">Communities & Activists For Action</h2>
+						<p>In Australia right now there are over one hundred communities who are desperately short of sufficient water. This is a failure of local, state / territory and national governments to properly represent us. </p>
+						<a href="#"> Read More
+							<span><i class="fas fa-arrow-right"></i></span>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-5">
+						<img src="{% static 'images/Ellery+Creek+NT.jpg' %}" class="img-fluid" alt="Responsive image">
+						<h2 class="header2 row_spaceing" >Commodifying Our Water Rights</h2>
+						<p>
+						he Murray-Darling river system managed by NSW – the Barwon-Darling – is “an ecosystem in crisis” which is on a path to collapse and urgent reforms are needed to save it, a review has warned.
+						The NSW Natural Resources Commission was asked to bring forward a statutory review of the Barwon-Darling by the previous minister Niall Blair, after ABC’s Four Corners aired allegations in 2017 of widespread water theft and another independent report raised serious doubts about the river’s management.Since then there have been several mass fish deaths downstream at Menindee with two reviews identifying over-extraction by the cotton industry as the main cause.
+						hhh Murray-Darling Basin corruption undermining $13b plan https://www.abc.net.au/news/rural/2019-09-03/mick-keelty-southern-murray-darling-basin-tour/11470352 
+						</p>
+						<a href="#"> Read More
+							<span><i class="fas fa-arrow-right"></i></span>
+						</a>
+					</div>
+					
+					<div class="col-md-5">
+						<img src="{% static 'images/MacDonnell+Ranges+NT.jpg' %}" class="img-fluid" alt="Responsive image">
+						<h2 class="header2 row_spaceing">A Corrupt Water History</h2>
+						<p>Here is some description text. Nunc cursus erat ut nisi facilisis, vel fringilla neque pellentesque. Pellentesque habitant morbi tristique facilisis habitant. </p>
+						<a href="#"> Read More
+							<span><i class="fas fa-arrow-right"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Container-->
+		
+		<!-- Banner part start here  -->
+		<div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'images/banner-bg.jpg' %}" data-z-index="1">
+			<div class="container-fluid custom-container">
+				<div class="row" style="margin-top:22% ">
+					<div class="col-md-6">
+						<div class="text-on-parallax-img">
+							<h1 class="header1 onimg">Start Your Individual & Community Activism Now.</h1>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="text-on-parallax-img">
+							<h6 class="header6 onimgpara">The Water Sovereignty Movement has been started by Aussies who are committed to supporting individual and community activism with one simple goal. To reclaim rights to an essential part of our Common Wealth - water. Our families - our communities - our farmers - and our environment - have a right to access to reasonable amounts of water.</h6>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="text-on-parallax-img">
+							<h6 class="header6 onimg"><a href="{% url 'donate' %}">START YOUR FIGHTBACK CAMPAIGN HERE →</a></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- our vision part start here -->
+		<div class="ParallaxContent" style="margin-top: 0">
+			<div class="container-fluid custom-container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="header2">OUR VISION</h2>
+						<h1 class="header1">Dedicated to positive change.</h1>
+						<p>Here is some description text. Nunc cursus erat ut nisi facilisis, vel fringilla neque pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+						<p>Etiam et turpis mattis, efficitur mi ut, ultrices diam. Donec consectetur, odio eget porta varius, orci mauris viverra ante, eget egestas turpis sapien vel orci. Donec eu ornare augue, ut efficitur velit. Vestibulum et magna mattis, sollicitudin ligula ac, facilisis dui. Ut blandit lectus neque, sit amet.</p> <br />
+						<a href="#">2020 State of play
+							<span><i class="fas fa-arrow-right"></i></span>
+						</a>
+						
+					</div>
+					<div class="col-md-6 side-img">
+						<img src="{% static 'images/home-p1423939271-6-2500x3333-tones-2.jpg' %}" class="img-fluid" alt="Responsive image">
+						
+					</div>
+				</div>
+				<div class="row ">
+					<div class="col-md-8"></div>
+					<div class="col-md-4 btn-grb"><a href="{% url 'interact' %}">interact, share & act here</a></div>
+				</div>
+			</div>
+		</div>
+		<!-- our vision part end here here -->
+		<!-- Latest News start here -->
+		<div class="ParallaxContent" style="margin-top: 0">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 background-img1">
+						<h3><a href="{% url 'latest_news' %}">Latest News</a></h3>
+						<p><a href="{% url 'latest_news' %}">read our blog
+							<span><i class="fas fa-arrow-right"></i></span>
+						</a></p>
+					</div>
+					<div class="col-md-4 background-img2">
+						<h3><a href="{% url 'become_a_sponsor' %}">Sponsor a Campaign</a></h3>
+						<p><a href="{% url 'become_a_sponsor' %}">different way to give
+							<span><i class="fas fa-arrow-right"></i></span>
+						</a></p>
+					</div>
+					<div class="col-md-4 background-img3">
+						<h3><a href="{% url 'donate' %}">Donate Today</a></h3>
+						<p><a href="{% url 'donate' %}">help us reach 2017 goal
+							<span><i class="fas fa-arrow-right"></i></span>
+						</a></p>
+					</div>
+				</div>
+			</div>
 			
-    </body>
+		</div>
+		<!-- Latest news end here -->
+		<!-- footer part start here -->
+		<div class="container-fluid section footer-section">
+			<div class="container-fluid custom-container">
+				<div class="row footer-content">
+					<div class="col-mid-2 footer-list">
+						<h3>About</h3>
+						<ul>
+							<li><a href=" {% url 'our_vision' %}">Our vision</a></li>
+							<li><a href=" {% url 'mentor_team' %}">Mentor Team</a></li>
+							<li><a href=" {% url 'careers_mentor' %}">careers</a></li>
+							<li><a href=" {% url 'latest_news' %}">Latest news</a></li>
+							<li><a href=" {% url 'contact' %}">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-mid-2 footer-list">
+						<h3>Campaigns</h3>
+						<ul>
+							<li><a href=" {% url 'campaign-1' %}">Campaign 1</a></li>
+							<li><a href=" {% url 'campaign-2' %}">Campaign 2</a></li>
+							<li><a href=" {% url 'campaign-3' %}">Campaign 3</a></li>
+							<li><a href=" {% url 'campaign-4' %}">Campaign 4</a></li>
+						</ul>
+					</div>
+					<div class="col-mid-2 footer-list">
+						<h3>Impact</h3>
+						<ul>
+							<li><a href=" {% url 'annual_report2016' %}">2016 Anual Report</a></li>
+							<li><a href=" {% url 'success_stories' %}">Success Stories</a></li>
+						</ul>
+					</div>
+					<div class="col-mid-2 footer-list">
+						<h3>Ways to Help</h3>
+						<ul>
+							
+							<li><a href=" {% url 'donate' %}">Donate</a></li>
+							<li><a href=" {% url 'become_a_sponsor' %}">Become a Sponsor</a></li>
+							<li><a href=" {% url 'careers_mentor' %}">Join the Team</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-mid-2 footer-list">
+						<h3>blog</h3>
+						
+					</div>
+					<div class="col-mid-2 footer-content-bg">
+						<h3>Subscribe to our Newsletter</h3>
+						<p>Here is a description of your newsletter. Ut dui quam, dignissim sed nisl sed, viverra tempor ipsum. Nunc sollicitudin ipsum at purus
+						tincidunt eleifend. Duis ut neque ullamcorper elit sagittis facilisis vel quis. </p>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="col-md-4"></div>
+					<div class=" col-md-4 footer-text-bg">
+						<p>This site & digital infrastructure is sponsored by:</p>
+						<p>The RepresentUs - Think Tank :</p>
+						<p>The RepresentUs - Australia - Movement :</p>
+						<p>Upward Enterprises</p>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
+    
+    <!-- footer part end -->
+		
+		<script type="text/javascript" src ="{% static 'js/video_home.js' %}"></script>
+		<script type="text/javascript" src ="{% static 'js/head_home.js' %} "></script>
+	</body>
 </html>

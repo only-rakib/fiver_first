@@ -1,0 +1,368 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+img {
+	vertical-align: middle;
+}
+.row
+{
+	
+	margin-top:1%;
+	/*padding-top: 1%;*/
+	
+}
+/*Header start*/
+.header1 {
+
+	/*clear:both;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 599;
+	font-style: normal;
+	font-size: 50px;
+	letter-spacing: 1px;*/
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 54px;
+	letter-spacing: .01em;
+	line-height: 1.3em;
+	text-transform: none;
+}
+.header1.onimg
+{
+	color: black;
+}
+
+.header2 {
+
+	/*font-size: 30px;
+	font-weight: bold;
+	font-family: 'Fjalla One', sans-serif;
+	font-style: normal;*/
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 32px;
+	letter-spacing: .02em;
+	line-height: 1.3em;
+	text-transform: none;
+}
+.header2.onimg
+{
+	color: black;
+}
+.header2.row_spaceing
+{
+	margin-top: 5%;
+}
+.header6 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 14px;
+}
+.header6.onimgpara
+{
+	color: #f2ec40;
+	font-family: Libre Franklin;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	letter-spacing: .06em;
+	line-height: 1.8em;
+	text-transform: none;
+
+	padding: 39px 0px 67px 0px;
+	/*width: 450px;*/
+}
+.header6 a{
+	font-family: 'Fjalla One', sans-serif;
+	padding: 6% 8%;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #fff;
+	background-color: #000;
+	border-color: #000;
+	cursor:pointer;
+	text-decoration:none;
+}
+.header6.onimg
+{
+	color:black;
+}
+/*Header end*/
+.col-md-5 p {
+	font-family: Libre Franklin;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	letter-spacing: .06em;
+	line-height: 1.8em;
+	text-transform: none;
+	color: #000;
+	width: 55%;
+	padding: 5px;
+}
+
+.container-fluid.custom-container {
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 40px;
+}
+
+.container-fluid.custom-container-nav {
+	padding-right: 50px;
+	padding-left: 35px;
+	padding-top: 40px;
+}
+
+html {
+	font-family: 'Fjalla One', sans-serif;
+	height: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.parallax-window {
+	min-height: 180%;
+	background: transparent;
+}
+
+.ParallaxContent {
+	background: none repeat scroll 0 0 #2581e8;
+	padding: 42px 0;    /*margin top remove to add lower part of video a section.
+	remove it and test
+	    */
+	margin-top: 25%;
+	color: black;
+	background-color: #ffffff;
+	z-index: 1;
+}
+
+.text-on-parallax-img {
+	z-index: 2;
+	position: relative;
+}
+
+.bacground-video,
+.banner-bg {
+
+	/*background-color: rgba(0, 0, 0, .65);*/
+	height: 100%;
+	left: 0;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+	transition: background-color 300ms ease;
+	width: 100%;  /*
+	    fixed = parallax
+	    scroll = normal
+	  */
+	background-attachment: fixed;
+}
+
+#hero-vid {
+	backface-visibility: hidden;	
+	/*background: url("image/header-img.jpg") no-repeat scroll 0 0 #000;*/
+	background-size: cover;
+	bottom: 0;
+	height: auto;
+	min-height: 100%;
+	min-width: 100%;
+	perspective: 1000;
+	position: fixed;
+	right: 0;
+	width: auto;
+	z-index: -1;
+}
+
+.fade {
+	background-color: rgba(0, 0, 0, .85) !important;
+}
+
+.btn-grb a {
+	padding: 6% 10%;
+	font-family: Fjalla One;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #fff;
+	background-color: #52c2c8;
+	border-color: #52c2c8;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn-grb a:hover {
+	background-color: #9ddee1;
+	text-decoration: none;
+}
+
+/*================================================ section pert here ===============================================*/
+
+
+
+
+.side-img {
+	margin-top: 25px;
+}
+
+/* =========================================blog section end here==================================================== */
+
+/* =========================================service section start here============================================= */
+
+.background-img1 {
+	width: 100%;
+	height: 100%;
+	background-image: url('/static/images/solid-ecae6b-2500x1667.jpg');
+	display: block;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.background-img2 {
+	width: 100%;
+	height: 100%;
+	background-image: url('/static/images/solid-b23a36-2500x1667.jpg');
+	display: block;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.background-img3 {
+	width: 100%;
+	height: 100%;
+	background-image: url('/static/images/solid-52c2c8-2500x1667.jpg');
+	display: block;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.background-img1 h3 {
+	padding-top: 65px;
+	font-family: Fjalla One;
+	padding-bottom: .3em;
+}
+
+.background-img2 h3 {
+	padding-top: 30px;
+	font-family: Fjalla One;
+	padding-bottom: .3em;
+}
+
+.background-img3 h3 {
+	padding-top: 65px;
+	font-family: Fjalla One;
+	padding-bottom: .3em;
+}
+
+.background-img1 h3 a {
+	text-decoration: none;
+	cursor: pointer;
+	font-family: Fjalla One;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 60px;
+	letter-spacing: .02em;
+	line-height: 1.2em;
+	text-transform: none;
+	color: #fff;
+}
+
+.background-img2 h3 a {
+	font-family: Fjalla One;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 60px;
+	letter-spacing: .02em;
+	line-height: 1.2em;
+	text-transform: none;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.background-img1 p a {
+	font-family: Fjalla One;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	letter-spacing: .1em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.background-img3 h3 a {
+	font-family: Fjalla One;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 60px;
+	letter-spacing: .02em;
+	line-height: 1.2em;
+	text-transform: none;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.background-img1 p,
+.background-img3 p {
+	padding-bottom: 55px;
+}
+
+.background-img2 p {
+	padding-bottom: 18px;
+}
+
+.background-img1 p a,
+.background-img2 p a,
+.background-img3 p a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	font-family: Fjalla One;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	letter-spacing: .1em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
